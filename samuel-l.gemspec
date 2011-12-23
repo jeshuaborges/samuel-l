@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Jeshua Borges"]
   s.email       = ["jesh@jesh.me"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Faker Lorem Ipsum with Samuel L Jackson quotes}
+  s.description = %q{Inspired by http://slipsum.com/}
 
   s.rubyforge_project = "samuel-l"
 

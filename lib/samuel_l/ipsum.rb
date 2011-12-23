@@ -2,7 +2,7 @@ module Samuel::L
   class Ipsum
     class << self
       def pick(format, count=1)
-        opts = Samuel::L.translate :paragraphs
+        opts = Samuel::L.translate format
         count.times.map{ opts[rand(opts.size)] }.join(" ")
       end
 
