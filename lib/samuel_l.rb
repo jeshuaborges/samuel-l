@@ -16,5 +16,5 @@ module Samuel
   end
 end
 
-require 'sameul_l/config'
-require 'sameul_l/ipsum'
+require 'samuel_l/config'
+require 'samuel_l/ipsum'
