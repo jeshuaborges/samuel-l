@@ -1,23 +1,13 @@
 require 'spec_helper'
 
-describe Samuel::L::Config do
-  subject { Samuel::L::Config }
+describe Samuel::L::Ipsum do
+  subject { Samuel::L::Ipsum }
 
-  describe ".agression=" do
-    context "brand spanking new" do
-      its(:aggression) { should eql :classic }
-    end
+  describe ".paragraph" do
+    its(:paragraph) { should be_instance_of(String) }
+  end
 
-    context "with bullshit" do
-      it "blows the fuck up" do
-        expect{ subject.aggression = :some_shit }.to raise_error(ArgumentError)
-      end
-    end
-
-    context "when chilln" do
-      it "alters my mood" do
-        expect{ subject.aggression=:lite }.to change{subject.aggression}.from(:classic).to(:lite)
-      end
-    end
+  describe ".sentence" do
+    its(:sentence) { should be_instance_of(String) }
   end
 end

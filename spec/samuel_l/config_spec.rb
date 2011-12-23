@@ -3,6 +3,8 @@ require 'spec_helper'
 describe Samuel::L::Config do
   subject { Samuel::L::Config }
 
+  before { subject.aggression = :classic }
+
   describe ".agression=" do
     its(:aggression) { should eql :classic }
 
